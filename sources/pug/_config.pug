@@ -1,0 +1,105 @@
+-
+	var
+		html_class = "wide wow-animation",
+		fonts = "//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500",
+		subscribeFormCounter = 0,
+		logo = {
+			default: 'logo-default-230x62.png',
+			inverse: 'logo-inverse-230x62.png',
+			name: 'Cute'
+		},
+		links = {
+			post: 'blog-post.html',
+			getTemplate:'#get-template'
+		},
+		colors = {
+			primary: '#976f55',
+			secondary: '#efc4a3',
+			orange: '#e7a855'
+		},
+		menu = [
+			{
+				title: 'Home',
+				category: 'home',
+				link: 'index.html'
+			},
+			{
+				title: 'About Us',
+				category: 'about'
+			},
+			{
+				title: 'Portfolio',
+				category: 'gallery',
+				link: 'grid-gallery.html',
+				dropdown: [
+					{ title: 'Grid Gallery' },
+					{ title: 'Full width Gallery' },
+					{ title: 'Masonry Gallery' },
+					{ title: 'Full Width Masonry Gallery' },
+					{	title: 'Single Project' }
+				]
+			},
+			{
+				title: 'Blog',
+				category: 'blog',
+				link: 'classic-blog.html',
+				dropdown: [
+					{	title: 'Classic Blog' },
+					{	title: 'Grid Blog' },
+					{	title: 'Grid Blog 2' },
+					{	title: 'Grid Blog 3' },
+					{	title: 'Blog Post' }
+				]
+			},
+			{
+				title: 'Shop',
+				category: 'shop',
+				dropdown: [
+					{  title: 'Shop' },
+					{  title: 'Single Product' },
+					{  title: 'Cart Page' },
+					{  title: 'Checkout' }
+				]
+			},
+			{
+				title: 'Contact Us',
+				category: 'contacts'
+			},
+			{
+				title: 'Pages',
+				category: 'pages',
+				link: '#',
+				megamenu: [
+					{
+						title: 'Elements',
+						list: [
+							{ title: 'Typography' },
+							{ title: 'Buttons' },
+							{ title: 'Forms' },
+							{ title: 'Tabs and Accordions' },
+							{ title: 'Counters' },
+							{ title: 'Icons with Text' },
+							{ title: 'Progress Bars' },
+							{ title: 'Calls to Action' },
+							{ title: 'Grid System' }
+						]
+					},
+					{
+						title: 'Additional pages',
+						list: [
+							{ title: 'Services' },
+							{ title: 'Single Service' },
+							{ title: 'Our Team' },
+							{ title: 'Testimonials' },
+							{ title: '404 Page' },
+							{ title: '503 Page' },
+							{ title: 'Pricing' },
+							{ title: 'Coming Soon' },
+							{ title: 'Contact Us 2' },
+							{ title: 'FAQ' },
+							{ title: 'Search results' }
+						]
+					}
+				]
+			}
+		];

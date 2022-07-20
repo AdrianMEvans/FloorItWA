@@ -1,0 +1,71 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-posts
+include ../components/_ui-pagination
+include ../components/_ui-quote
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Classic blog'
+
+block page 
+	// Page Header
+	+header-modern
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-breadcrumbs'
+	})
+
+	// Classic blog
+	section.section.section-xl.bg-default.text-md-left
+		.container
+			.row.row-70
+				.col-lg-8
+					+post-classic({
+						title: 'Flooring Pro’s Secrets to Raise Your Home Value',
+						badge: { mod: 'badge-secondary', text: 'Flooring' },
+						time: { datetime: '2019-11-30', dateText: 'Nov 30, 2019' },
+						img: 'post-1-770x430'
+					})
+
+					+post-classic({
+						title: 'Best laminate & Hardwood Flooring Trends',
+						badge: { mod: 'badge-primary', text: 'Trends' },
+						time: { datetime: '2019-11-30', dateText: 'Nov 30, 2019' },
+						owl: [
+							{ img: 'post-2-770x430' },
+							{ img: 'post-3-770x430' },
+							{ img: 'post-4-770x430' }
+						]
+					})
+
+					+post-classic({
+						title: 'How to Pick Floors / Carpet & Get the Best Deals',
+						badge: { mod: 'badge-secondary', text: 'Flooring' },
+						time: { datetime: '2019-11-30', dateText: 'Nov 30, 2019' },
+						video: 'https://player.vimeo.com/video/132156410'
+					})
+
+					+post-classic({
+						title: 'Causes & Cures for Common Flooring Catastrophes',
+						badge: { mod: 'badge-secondary', text: 'Flooring' },
+						time: { datetime: '2019-11-30', dateText: 'Nov 30, 2019' },
+						gallery: {
+							img: 'post-5-470x430',
+							img2: 'post-6-270x204',
+							img3: 'post-7-270x204'
+							}
+					})
+
+					.pagination-wrap
+						+pagination-bootstrap(null, 1, 4)
+
+				.col-lg-4
+					include ../sections/_post-sidebar
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

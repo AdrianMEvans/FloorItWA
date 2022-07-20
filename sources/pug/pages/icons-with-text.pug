@@ -1,0 +1,105 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-box-icon
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Icons with Text'
+
+block page 
+	// Page Header
+	+header-modern
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-breadcrumbs'
+	})
+
+	// Icons #1
+	section.section.section-sm.section-first.bg-default
+		.container
+			h3 #1
+			.row.row-40.box-ordered
+				.col-sm-6.col-lg-3
+					+box-icon-creative({
+						icon: 'fl-bigmug-line-square152',
+						title: 'Wood Flooring',
+						text: 'Danistas accelerare in lentia! Vae, festus detrius! Cum itineris tramitem trabem, omnes.'
+					})
+				.col-sm-6.col-lg-3
+					+box-icon-creative({
+						icon: 'fl-bigmug-line-square156',
+						title: 'Stone Flooring',
+						text: 'Cum ventus favere, omnes fermiumes experientia azureus, fatalis devirginatoes.'
+					})
+				.col-sm-6.col-lg-3
+					+box-icon-creative({
+						icon: 'fl-bigmug-line-cube29',
+						title: 'Carpets & Rugs',
+						text: 'Indictio, mensa, et mons. Fidelis, neuter torquiss patienter promissio de domesticus.'
+					})
+				.col-sm-6.col-lg-3
+					+box-icon-creative({
+						icon: 'fl-bigmug-line-sun81',
+						title: 'Eco-friendly Flooring',
+						text: 'Ecce. A falsis, exemplar secundus imber. Barbatus, emeritis indexs inciviliter talem de audax.'
+					})
+	='\n'
+
+	// Icons #2
+	section.section.section-sm.bg-default
+		.container
+			h3 #2
+			.row.row-40
+				.col-md-6.col-lg-4
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-cropping1',
+						title: 'Floor Refinish ',
+						text: 'Cur boreas cadunt? Rumors accelerare, tanquam salvus compater. Cum bubo assimilant, omnes scutumes tractare noster, emeritis guttuses.'
+					})
+				.col-md-6.col-lg-4
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-wrench66',
+						title: 'Floor Repair',
+						text: 'A falsis, adgium barbatus exsul. Magnum glutens ducunt ad devirginato. Cur lixa favere? Cum visus congregabo, omnes amores visum talis, raptus.'
+					})
+				.col-md-6.col-lg-4
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-square160',
+						title: 'Floor Re-Coats',
+						text: 'Orgias studere! Ecce, noster ventus! Resistere solite ducunt ad albus poeta. Devatio faveres, tanquam dexter acipenser. Peritus fidess.'
+					})
+	='\n'
+
+	// Icons #3
+	section.section.section-sm.section-last.bg-default
+		.container
+			h3 #3
+			.row.row-40
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						align: 'flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left',
+						icon: 'fl-bigmug-line-airplane86',
+						title: 'Worldwide delivery',
+						text: 'Cur tabes observare? Cum habena resistere, omnes urbses gratia fortis, dexter.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						align: 'flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left',
+						icon: 'fl-bigmug-line-giftbox54',
+						title: 'Nice Gifts for every client',
+						text: 'Orgias mori, tanquam noster demissio. Cum glos omnes danistaes promissio.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						align: 'flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left',
+						icon: 'fl-bigmug-line-hot67',
+						title: '-20% for the 1st purchase',
+						text: 'Sunt dominaes prensionem lotus, festus extumes. Cum domina ire, omnes rumores demitto.'
+					})
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

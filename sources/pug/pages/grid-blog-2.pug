@@ -1,0 +1,84 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-posts
+include ../components/_ui-pagination
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Grid blog 2'
+
+block page 
+	// Page Header
+	+header-modern
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-breadcrumbs'
+	})
+
+	// Grid blog
+	section.section.section-xl.bg-default.text-md-left
+		.container
+			.row.row-50.justify-content-center
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4
+					+post-creative({
+						imgUser: 'user-4-49x49',
+						author: 'Mary Lee',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'},
+						img: 'post-16-370x267',
+						title: 'Flooring Pro’s Secrets to Raise Your Home Value'
+					})
+
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4
+					+post-creative({
+						imgUser: 'user-5-49x49',
+						author: 'Rupert Wood',
+						time: {datetime: '2019-05-04', dateText: 'May 04, 2019'},
+						img: 'post-17-370x267',
+						title: 'Best laminate & Hardwood Flooring Trends for 2019'
+					})
+
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4
+					+post-creative({
+						imgUser: 'user-6-49x49',
+						author: 'Ann Anderson',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'},
+						img: 'post-18-370x267',
+						title: 'How to Pick Floors / Carpet & Get the Best Deals'
+					})
+
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4
+					+post-creative({
+						imgUser: 'user-4-49x49',
+						author: 'Mary Lee',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'},
+						img: 'post-19-370x267',
+						title: 'Causes & Cures for Common Flooring Catastrophes'
+					})
+
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4
+					+post-creative({
+						imgUser: 'user-5-49x49',
+						author: 'Rupert Wood',
+						time: {datetime: '2019-05-04', dateText: 'May 04, 2019'},
+						img: 'post-20-370x267',
+						title: 'How to Protect Your Floors During a Move: 5 Important Tips'
+					})
+
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4
+					+post-creative({
+						imgUser: 'user-6-49x49',
+						author: 'Ann Anderson',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'},
+						img: 'post-21-370x267',
+						title: 'Red Oak Hardwood vs. White Oak Hardwood'
+					})
+
+			.pagination-wrap
+				+pagination-bootstrap(null, 1, 4)
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

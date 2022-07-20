@@ -1,0 +1,58 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-posts
+include ../components/_ui-pagination
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Grid blog 3'
+
+block page 
+	// Page Header
+	+header-modern
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-breadcrumbs'
+	})
+
+	// Grid blog
+	section.section.section-xl.bg-default.text-md-left
+		.container
+			.row.row-60.justify-content-center
+				.col-sm-9.col-md-6.col-lg-6
+					+post-aria({
+						img: 'post-22-570x320',
+						title: 'Flooring Pro’s Secrets to <br class="d-none d-sm-block">Raise Your Home Value',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'}
+					})
+
+				.col-sm-9.col-md-6.col-lg-6
+					+post-aria({
+						img: 'post-23-570x320',
+						title: 'Best laminate & Hardwood <br class="d-none d-sm-block">Flooring Trends',
+						time: {datetime: '2019-05-12', dateText: 'May 12, 2019'}
+					})
+
+				.col-sm-9.col-md-6.col-lg-6
+					+post-aria({
+						img: 'post-24-570x320',
+						title: 'How to Pick Floors / Carpet <br class="d-none d-sm-block">and Get the Best Deals',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'}
+					})
+
+				.col-sm-9.col-md-6.col-lg-6
+					+post-aria({
+						img: 'post-25-570x320',
+						title: 'Causes & Cures for Common <br class="d-none d-sm-block">Flooring Catastrophes',
+						time: {datetime: '2019-05-12', dateText: 'May 12, 2019'}
+					})
+
+			.pagination-wrap
+				+pagination-bootstrap(null, 1, 4)
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

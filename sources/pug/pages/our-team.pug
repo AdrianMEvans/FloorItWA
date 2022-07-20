@@ -1,0 +1,133 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-box-team
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Our Team'
+
+block page 
+	// Page Header
+	+header-modern
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-breadcrumbs'
+	})
+
+	// Team #1
+	section.section.section-sm.section-first.bg-default
+		.container
+			h3 #1
+			.row.row-sm.row-30
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-1-370x406',
+						name: 'Ryan Wilson',
+						status: 'Founder, Owner'
+					})
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-2-370x406',
+						name: 'Amanda Clark',
+						status: 'Measure Technician'
+					})
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-3-370x406',
+						name: 'Sam Robinson',
+						status: 'Installer'
+					})
+	='\n'
+
+	// Team #2
+	section.section.section-sm.bg-default
+		.container
+			h3 #2
+			.row.row-xs.row-40.justify-content-center.justify-content-lg-start
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						img: 'team-11-118x118',
+						name: 'Ryan Wilson',
+						status: 'Founder, Owner'
+					})
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						img: 'team-12-118x118',
+						name: 'Sam Robinson',
+						status: 'Installer'
+					})
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						img: 'team-13-118x118',
+						name: 'Amanda Clark',
+						status: 'Measure Technician'
+					})
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						img: 'team-14-118x118',
+						name: 'James Smith',
+						status: 'Operations Manager'
+					})
+	='\n'
+
+	// Team #3
+	section.section.section-sm.bg-default
+		.container
+			h3 #3
+			.row.row-sm.row-40
+				.col-md-6.col-lg-4
+					+team-creative({
+						img: 'team-4-370x366',
+						name: 'Amanda Clark',
+						status: 'Measure Technician'
+					})
+				.col-md-6.col-lg-4
+					+team-creative({
+						img: 'team-5-370x366',
+						name: 'Sam Robinson',
+						status: 'Installer'
+					})
+				.col-md-6.col-lg-4
+					+team-creative({
+						img: 'team-6-370x366',
+						name: 'James Smith',
+						status: 'Operations Manager'
+					})
+	='\n'
+
+	// Team #4
+	section.section.section-sm.section-last.bg-default
+		.container
+			h3 #4
+			.row.row-30.justify-content-center.justify-content-lg-start
+				.col-sm-6.col-md-5.col-lg-4.col-xl-3
+					+team-nikki({
+						img: 'team-7-270x248',
+						name: 'James Smith',
+						status: 'Operations Manager'
+					})
+				.col-sm-6.col-md-5.col-lg-4.col-xl-3
+					+team-nikki({
+						img: 'team-8-270x248',
+						name: 'Ryan Wilson',
+						status: 'Founder, Owner'
+					})
+				.col-sm-6.col-md-5.col-lg-4.col-xl-3
+					+team-nikki({
+						img: 'team-9-270x248',
+						name: 'Amanda Clark',
+						status: 'Measure Technician'
+					})
+				.col-sm-6.col-md-5.col-lg-4.col-xl-3
+					+team-nikki({
+						img: 'team-10-270x248',
+						name: 'Sam Robinson',
+						status: 'Installer'
+					})
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

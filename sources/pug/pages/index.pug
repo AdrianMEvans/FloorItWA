@@ -1,0 +1,382 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-product
+include ../components/_ui-box-icon
+include ../components/_ui-counters
+include ../components/_ui-quote
+include ../components/_ui-box-team
+include ../components/_ui-posts
+
+block variables
+	- var activeCategory = 'home'
+	- var pageName = 'Cute Flooring'
+
+block page
+	// Page Header
+	+header-modern({ mod: 'rd-navbar-modern-wrap' })
+
+	// Swiper
+	section.section.swiper-container.swiper-slider.swiper-slider-modern(data-loop='true' data-autoplay='5000' data-simulate-touch="true" data-nav='true' data-slide-effect='fade')
+		.swiper-wrapper.text-left
+			.swiper-slide(data-slide-bg='images/slide-1-1920x850.jpg')
+				.swiper-slide-caption
+					.container: .row: .col-11.col-sm-9.col-md-8.col-lg-7.col-xl-6.col-xxl-5: .slider-modern-box
+						h2.oh.slider-modern-title
+							span(data-caption-animate='slideInDown' data-caption-delay='0') Highest quality
+							span(data-caption-animate='slideInUp' data-caption-delay='0') flooring solutions
+						p(data-caption-animate='fadeInRight' data-caption-delay='400') Parquetry has been providing top-notch flooring products and solutions since our establishment.
+						.oh.button-wrap: a.button.button-default-outline-2.button-ujarak(href='shop.html' data-caption-animate='slideInLeft' data-caption-delay='400') Shop now
+			.swiper-slide(data-slide-bg='images/slide-2-1920x850.jpg')
+				.swiper-slide-caption
+					.container: .row: .col-10.col-sm-8.col-md-7.col-lg-6.col-xl-5.col-xxl-4: .slider-modern-box
+						h2.oh.slider-modern-title
+							span(data-caption-animate='slideInLeft' data-caption-delay='0') Professionals
+							span(data-caption-animate='slideInUp' data-caption-delay='0') You can rely on
+						p(data-caption-animate='fadeInRight' data-caption-delay='400') Let our professional team design the floor of your dreams today.
+						.oh.button-wrap: a.button.button-default-outline-2.button-ujarak(href='shop.html' data-caption-animate='slideInLeft' data-caption-delay='400') Shop now
+			.swiper-slide(data-slide-bg='images/slide-3-1920x850.jpg')
+				.swiper-slide-caption
+					.container: .row: .col-11.col-sm-8.col-md-7.col-lg-5.col-xxl-4: .slider-modern-box
+						h2.oh.slider-modern-title
+							span(data-caption-animate='slideInDown' data-caption-delay='0') Unique and
+							span(data-caption-animate='slideInLeft' data-caption-delay='0') affordable
+						p(data-caption-animate='fadeInRight' data-caption-delay='400') We offer our clients a unique variety of affordable flooring products.
+						.oh.button-wrap: a.button.button-default-outline-2.button-ujarak(href='shop.html' data-caption-animate='slideInUp' data-caption-delay='400') Shop now
+
+		// Swiper Navigation
+		.swiper-button-prev
+		.swiper-button-next
+		// Swiper Pagination
+		.swiper-pagination.swiper-pagination-style-2
+	='\n'
+
+	// In the spotlight
+	section.section.section-sm.section-first.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content What We Offer
+			.row.row-30.justify-content-center
+				.col-md-12.col-lg-8: .oh
+					+box-sportlight({
+						img: 'spotlight-1-770x332',
+						title: 'Natural stone',
+						badgeNew: true
+					}).wow.slideInDown(data-wow-delay='0s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+box-sportlight({
+						mod: 'box-sportlight-sm',
+						img: 'spotlight-2-370x332',
+						title: 'Hardwood',
+						badgeSale: '30'
+					}).wow.slideInRight(data-wow-delay='.1s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+box-sportlight({
+						mod: 'box-sportlight-sm',
+						img: 'spotlight-3-370x332',
+						title: 'Tile'
+					}).wow.slideInLeft(data-wow-delay='0s')
+				.col-sm-6.col-lg-4: .oh
+					+box-sportlight({
+						img: 'spotlight-4-370x332',
+						title: 'Carpet'
+					}).wow.slideInUp(data-wow-delay='.1s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+box-sportlight({
+						mod: 'box-sportlight-sm',
+						img: 'spotlight-5-370x332',
+						title: 'Laminate'
+					}).wow.slideInRight(data-wow-delay='.1s')
+	='\n'
+
+	// Trending products
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content Trending products
+			.row.row-40.justify-content-center
+				.col-sm-8.col-md-7.col-lg-6.wow.fadeInLeft(data-wow-delay='0s')
+					.box-ordered-2: +jpg('image-map-1-570x715')
+				.col-md-5.col-lg-6: .row.row-30.justify-content-center
+					.col-sm-6.col-md-12.col-lg-6: .oh-desktop
+						+product-2({
+							unit: 'flex-row flex-lg-column',
+							img: 'product-14-270x280',
+							title: 'Carrara Marble',
+							price: '500',
+							priceOld: '400'
+						}).wow.slideInRight( data-wow-delay='0s' )
+					.col-sm-6.col-md-12.col-lg-6: .oh-desktop
+						+product-2({
+							unit: 'flex-row flex-lg-column',
+							img: 'product-15-270x280',
+							title: 'Polished Marble',
+							price: '150'
+						}).wow.slideInLeft( data-wow-delay='0s' )
+					.col-sm-6.col-md-12.col-lg-6: .oh-desktop
+						+product-2({
+							unit: 'flex-row flex-lg-column',
+							img: 'product-16-270x280',
+							title: 'Bastille Gray',
+							price: '520'
+						}).wow.slideInLeft( data-wow-delay='0s' )
+					.col-sm-6.col-md-12.col-lg-6: .oh-desktop
+						+product-2({
+							unit: 'flex-row flex-lg-column',
+							img: 'product-17-270x280',
+							title: 'Baycliff Caulfeild',
+							price: '350'
+						}).wow.slideInRight( data-wow-delay='0s' )
+	='\n'
+
+	// Icons Ruby
+	section.section.section-sm.bg-default
+		.container: .row.row-30.justify-content-center
+			.col-sm-6.col-lg-4.wow.fadeInRight(data-wow-delay='0s')
+				+box-icon-ruby({
+					align: 'flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left',
+					icon: 'fl-bigmug-line-airplane86',
+					title: 'Free worldwide Delivery',
+					text: 'When ordering from $300'
+				})
+			.col-sm-6.col-lg-4.wow.fadeInRight(data-wow-delay='.1s')
+				+box-icon-ruby({
+					align: 'flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left',
+					icon: 'fl-bigmug-line-circular220',
+					title: 'High-Quality products',
+					text: 'Award-winning flooring'
+				})
+			.col-sm-6.col-lg-4.wow.fadeInRight(data-wow-delay='.2s')
+				+box-icon-ruby({
+					align: 'flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left',
+					icon: 'fl-bigmug-line-hot67',
+					title: '-20% on new collections',
+					text: 'Get your discount today!'
+				})
+	='\n'
+
+	// Improve your interior with deco
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content Best flooring projects
+			.row.row-30(data-lightgallery='group')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+thumbnail-mary-2({
+						mod: 'thumbnail-sm',
+						img: 'grid-gallery-1-370x303',
+						imgOriginal: 'grid-gallery-1-570x800-original',
+						title: '609 Madison Ave '
+					}).wow.slideInLeft(data-wow-delay='0s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+thumbnail-mary-2({
+						mod: 'thumbnail-sm',
+						img: 'grid-gallery-2-370x303',
+						imgOriginal: 'grid-gallery-2-530x800-original',
+						title: '3100 Hackberry Ln '
+					}).wow.slideInUp(data-wow-delay='.1s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+thumbnail-mary-2({
+						mod: 'thumbnail-sm',
+						img: 'grid-gallery-3-370x303',
+						imgOriginal: 'grid-gallery-3-1200x800-original',
+						title: '304 Pecan Ave'
+					}).wow.slideInRight(data-wow-delay='.0s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+thumbnail-mary-2({
+						mod: 'thumbnail-sm',
+						img: 'grid-gallery-4-370x303',
+						imgOriginal: 'grid-gallery-4-530x800-original',
+						title: '121 Lindenwood St'
+					}).wow.slideInUp(data-wow-delay='.1s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+thumbnail-mary-2({
+						mod: 'thumbnail-sm',
+						img: 'grid-gallery-5-370x303',
+						imgOriginal: 'grid-gallery-5-1200x800-original',
+						title: '348 Lakewood Rd'
+					}).wow.slideInLeft(data-wow-delay='0s')
+				.col-sm-6.col-lg-4: .oh-desktop
+					+thumbnail-mary-2({
+						mod: 'thumbnail-sm',
+						img: 'grid-gallery-6-370x303',
+						imgOriginal: 'grid-gallery-6-1200x800-original',
+						title: '2805 Hickory St'
+					}).wow.slideInDown(data-wow-delay='.1s')
+	='\n'
+
+	// Section CTA
+	section.section.section-sm.bg-default.text-md-center
+		+parallax({
+			img: 'bg-cta-2',
+			innerClass: 'section-xl section-inset-custom-2 context-dark'
+		})
+			.container: .row.justify-content-center: .col-md-7.col-lg-6
+				h3.oh.font-weight-normal: span.d-inline-block.wow.slideInDown(data-wow-delay='0s') Get New & Amazing
+					br
+					| Flooring From Us!
+				p.text-spacing-75.wow.fadeInRight(data-wow-delay='.1s') Parquetry offers lots of great flooring solutions for home owners. Whether you prefer laminate or natural stone flooring, our experts can manufacture and install anything you like!
+				a.button.button-secondary.button-ujarak.wow.fadeInUp(href='shop.html' data-wow-delay='.2s') Shop now
+	='\n'
+
+	// About us
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content About us
+			.row.row-lg.row-50.justify-content-center.border-classic.border-classic-2
+				.col-sm-6.col-md-3.wow.fadeInLeft(data-wow-delay='0s')
+					+counter-creative({
+						icon: 'fl-bigmug-line-trophy55',
+						number: '12',
+						title: 'Awards'
+					})
+				.col-sm-6.col-md-3.wow.fadeInLeft(data-wow-delay='.1s')
+					+counter-creative({
+						icon: 'fl-bigmug-line-cube29',
+						number: '2',
+						symbol: 'k',
+						title: 'Projects'
+					})
+				.col-sm-6.col-md-3.wow.fadeInLeft(data-wow-delay='.2s')
+					+counter-creative({
+						icon: 'fl-bigmug-line-sun81',
+						number: '679',
+						title: 'Happy clients'
+					})
+				.col-sm-6.col-md-3.wow.fadeInLeft(data-wow-delay='.3s')
+					+counter-creative({
+						icon: 'fl-bigmug-line-user143',
+						number: '25',
+						title: 'Team members'
+					})
+	='\n'
+
+	// What people say
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content What people say
+			include ../sections/_carousel-testimonials
+	='\n'
+
+	// Team of professionals
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content Team of professionals
+			.row.row-30
+				.col-md-6.col-lg-4.col-xl-4.wow.fadeInRight(data-wow-delay='0s')
+					+team-classic({
+						img: 'team-1-370x406',
+						name: 'Ryan Wilson',
+						status: 'Founder, Owner'
+					})
+				.col-md-6.col-lg-4.col-xl-4.wow.fadeInRight(data-wow-delay='.1s')
+					+team-classic({
+						img: 'team-2-370x406',
+						name: 'Amanda Clark',
+						status: 'Measure Technician'
+					})
+				.col-md-6.col-lg-4.col-xl-4.wow.fadeInRight(data-wow-delay='.2s')
+					+team-classic({
+						img: 'team-3-370x406',
+						name: 'Sam Robinson',
+						status: 'Installer'
+					})
+	='\n'
+
+	// Popular products
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content Popular products
+			// Owl Carousel
+			.owl-carousel.owl-products(data-items='1', data-sm-items='2', data-md-items='3', data-lg-items='4', data-margin='30', data-dots='true', data-autoplay='true')
+				+product({
+					img: 'product-13-270x280',
+					title: 'Burdur Pearl',
+					price: '235'
+				})
+				+product({
+					img: 'product-18-270x280',
+					title: 'Seagrass Limestone',
+					price: '254'
+				})
+				+product({
+					img: 'product-19-270x280',
+					title: 'Ibiza white',
+					price: '650'
+				})
+				+product({
+					img: 'product-5-270x280',
+					title: 'Lymra Limestone',
+					price: '650'
+				})
+				+product({
+					img: 'product-2-270x280',
+					title: 'Carrara Marble',
+					price: '94'
+				})
+				+product({
+					img: 'product-1-270x280',
+					title: 'Bardiglio Grey',
+					price: '520'
+				})
+				+product({
+					img: 'product-3-270x280',
+					title: 'Bastille Gray',
+					price: '200'
+				})
+				+product({
+					img: 'product-4-270x280',
+					title: 'Old World Acacia',
+					price: '550'
+				})
+	='\n'
+
+	// Latest posts
+	section.section.section-sm.bg-default
+		.container
+			.oh: .title-decoration-lines.wow.slideInUp(data-wow-delay='0s'): h6.title-decoration-lines-content Latest posts
+			.row.row-50.justify-content-center
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4.wow.fadeInLeft(data-wow-delay='0s')
+					+post-creative({
+						imgUser: 'user-4-49x49',
+						author: 'Mary Lee',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'},
+						img: 'post-16-370x267',
+						title: 'Flooring Pro’s Secrets that can Raise Your Home Value'
+					})
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4.wow.fadeInLeft(data-wow-delay='.1s')
+					+post-creative({
+						imgUser: 'user-5-49x49',
+						author: 'Rupert Wood',
+						time: {datetime: '2019-05-04', dateText: 'May 04, 2019'},
+						img: 'post-17-370x267',
+						title: 'Best laminate & Hardwood Flooring Trends for 2019'
+					})
+				.col-sm-9.col-md-6.col-lg-5.col-xl-4.wow.fadeInLeft(data-wow-delay='.2s')
+					+post-creative({
+						imgUser: 'user-6-49x49',
+						author: 'Ann Anderson',
+						time: {datetime: '2019-05-17', dateText: 'May 17, 2019'},
+						img: 'post-18-370x267',
+						title: 'How to Pick Floors / Carpet & Get the Best Deals'
+					})
+	='\n'
+
+	// Section CTA 2
+	section.section.section-sm.bg-default.text-center
+		include ../sections/_section-call-to-action-2
+	='\n'
+
+	section.section.section-sm.section-last.bg-default
+		.container
+			// Owl Carousel
+			.owl-carousel.owl-clients(data-items='1', data-sm-items='2', data-md-items='3', data-lg-items='4', data-margin='30', data-dots='true', data-animation-in="fadeIn", data-animation-out="fadeOut", data-autoplay='true')
+				a.clients-modern(href='#'): +png('clients-1-270x145')
+				a.clients-modern(href='#'): +png('clients-2-270x145')
+				a.clients-modern(href='#'): +png('clients-3-270x145')
+				a.clients-modern(href='#'): +png('clients-4-270x145')
+				a.clients-modern(href='#'): +png('clients-5-270x145')
+				a.clients-modern(href='#'): +png('clients-6-270x145')
+				a.clients-modern(href='#'): +png('clients-7-270x145')
+				a.clients-modern(href='#'): +png('clients-8-270x145')
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

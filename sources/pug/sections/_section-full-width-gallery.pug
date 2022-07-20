@@ -1,0 +1,75 @@
+.isotope-filters.isotope-filters-horizontal
+	//- Isotope Filters
+	button.isotope-filters-toggle.button.button-md.button-icon.button-icon-right.button-default-outline.button-wapasha(data-custom-toggle='#isotope-3', data-custom-toggle-hide-on-blur='true')
+		span.icon.fa.fa-caret-down
+		| Filter
+	ul#isotope-3.isotope-filters-list
+		li: a.active(href='#', data-isotope-filter='*', data-isotope-group='gallery') All
+		li: a(href='#', data-isotope-filter='Type 1', data-isotope-group='gallery') Apartments
+		li: a(href='#', data-isotope-filter='Type 2', data-isotope-group='gallery') Offices
+		li: a(href='#', data-isotope-filter='Type 3', data-isotope-group='gallery') Corporate designs
+.row.row-30.isotope(data-lightgallery='group')
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 3')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-1-420x350',
+			imgOriginal: 'grid-gallery-1-570x800-original',
+			numberProject: '1',
+			text: 'Messor, vigil, et nutrix. Consilium bassus particula est. Cum zeta velum, omnes elogiumes convertam.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 2' data-wow-delay='.1s')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-2-420x350',
+			imgOriginal: 'grid-gallery-2-530x800-original',
+			numberProject: '2',
+			text: 'Mineraliss sunt rationes de talis itineris tramitem. Bi-color, audax solitudos patienter prensionem.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 1' data-wow-delay='.2s')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-3-420x350',
+			imgOriginal: 'grid-gallery-3-1200x800-original',
+			numberProject: '3',
+			text: 'Cum saga tolerare, omnes habitioes dignus altus, camerarius elogiumes. Ortum sensim ducunt.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 3' data-wow-delay='.3s')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-4-420x350',
+			imgOriginal: 'grid-gallery-4-530x800-original',
+			numberProject: '4',
+			text: 'Humani generis fatalis demolitione est. Altus, bassus abactors absolute gratia de germanus, emeritis.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInRight(data-filter='Type 2')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-5-420x350',
+			imgOriginal: 'grid-gallery-5-1200x800-original',
+			numberProject: '5',
+			text: 'Rumors tolerare in ferox moscua! Audax, gratis classiss sapienter manifestum de placidus.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInRight(data-filter='Type 1' data-wow-delay='.1s')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-6-420x350',
+			imgOriginal: 'grid-gallery-6-1200x800-original',
+			numberProject: '6',
+			text: 'Onus, itineris tramitem, et habitio. Superbus, gratis menss sed mire perdere de camerarius.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInRight(data-filter='Type 3' data-wow-delay='.2s')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-7-420x350',
+			imgOriginal: 'fullwidth-gallery-7-1200x800-original',
+			numberProject: '7',
+			text: 'Planetas ire in regius mare! Cum nomen resistere, omnes eposes perdere superbus, emeritis.'
+		})
+	.col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInRight(data-filter='Type 2' data-wow-delay='.3s')
+		+thumbnail-classic({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-gallery-8-420x350',
+			imgOriginal: 'fullwidth-gallery-8-1200x800-original',
+			numberProject: '8',
+			text: 'Pes de castus index, experientia caesium! Clemens, primus lapsuss patienter imperium de audax.'
+		})

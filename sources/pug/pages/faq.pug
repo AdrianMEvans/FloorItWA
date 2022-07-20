@@ -1,0 +1,78 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-card
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'FAQ'
+
+block page 
+	// Page Header
+	+header-modern
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-breadcrumbs'
+	})
+
+	// Section FAQ
+	section.section.section-xl.bg-default
+		.container
+			// Bootstrap collapse
+			.row.row-15.align-items-start.card-group-custom.card-group-corporate(id='accordion2' role='tablist' aria-multiselectable='false')
+				.col-lg-6
+					+card({
+						show: true,
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '1',
+						header: 'What are the advantages of purchasing a template?'
+					})
+						p Capio prareres, tanquam noster brodium. Cur planeta accelerare? Orgias peregrinatione! Nunquam examinare exemplar. Nunquam convertam turpis. Torus albus luba est.
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '4',
+						header: 'Do you provide any scripts?'
+					})
+						p Heu, calceus! Ionicis tormentos crescere in quadrata! Salvus animalis sed mire talems mineralis est. Abactuss tolerare in cubiculum! Camerarius, secundus cedriums aliquando prensionem de germanus, grandis guttus.
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '3',
+						header: 'What do I receive when I order a template?'
+					})
+						p Ionicis tormentos sunt planetas de dexter burgus. Alter solem etiam experientias boreas est.
+
+				.col-lg-6
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '2',
+						header: 'In what formats are your templates available?'
+					})
+						p Finiss trabem! Hercle, urbs germanus!, fermium! Devatios mori, tanquam altus amicitia. Vae, zelus! A falsis, victrix primus equiso. Ubi est magnum abnoba? Mons alter clinias est. Est albus vortex, cesaris. Est alter historia, cesaris.
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '5',
+						header: 'What am I allowed to do with the templates?'
+					})
+						p Cum calcaria resistere, omnes brodiumes imperium fatalis, regius fortises. Est teres solitudo, cesaris. Cur exsul assimilant? Vae, primus silva! Peregrinatione patienter ducunt ad bassus repressor. Eheu, alter competition!
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '6',
+						header: 'What is a unique/non-unique purchase?'
+					})
+						p Alter itineris tramitem virtualiter talems historia est. Zirbuss credere, tanquam fatalis exemplar. Cum abactor experimentum, omnes cursuses imperium talis, dexter omniaes.
+	='\n'
+
+	// Page Footer
+	include ../sections/_footer-modern

@@ -1,0 +1,43 @@
+.row.row-30.row-isotope.isotope(data-lightgallery='group')
+	.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 3'): .oh-desktop
+		+thumbnail-mary({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-masonry-gallery-1-420x330',
+			imgOriginal: 'grid-gallery-1-570x800-original',
+			numberProject: '1'
+		}).wow.slideInDown
+	.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 2'): .oh-desktop
+		+thumbnail-mary({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-masonry-gallery-2-420x330',
+			imgOriginal: 'grid-gallery-2-530x800-original',
+			numberProject: '2'
+		}).wow.slideInUp
+	.col-md-4.col-xl-3.isotope-item(data-filter='Type 1'): .oh-desktop.thumbnail-big
+		+thumbnail-mary({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-masonry-gallery-3-420x690',
+			imgOriginal: 'grid-gallery-3-1200x800-original',
+			numberProject: '3'
+		}).wow.slideInLeft(data-wow-delay='.1s')
+	.col-md-8.col-xl-6.isotope-item(data-filter='Type 2'): .oh-desktop
+		+thumbnail-mary({
+			mod: 'thumbnail-xl thumbnail-custom-mobile',
+			img: 'fullwidth-masonry-gallery-5-870x330',
+			imgOriginal: 'grid-gallery-5-1200x800-original',
+			numberProject: '5'
+		}).wow.slideInUp(data-wow-delay='.1s')
+	.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 3'): .oh-desktop
+		+thumbnail-mary({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-masonry-gallery-4-420x330',
+			imgOriginal: 'grid-gallery-4-530x800-original',
+			numberProject: '4'
+		}).wow.slideInRight(data-wow-delay='.1s')
+	.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1'): .oh-desktop
+		+thumbnail-mary({
+			mod: 'thumbnail-md',
+			img: 'fullwidth-masonry-gallery-6-420x330',
+			imgOriginal: 'grid-gallery-6-1200x800-original',
+			numberProject: '6'
+		}).wow.slideInLeft(data-wow-delay='.1s')
