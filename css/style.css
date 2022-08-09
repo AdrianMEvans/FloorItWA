@@ -295,7 +295,7 @@ p [style*='max-width'] {
 }
 
 .brand .brand-logo-light {
-	display: none;
+	/* display: none; */
 	filter: invert(1);
 }
 
