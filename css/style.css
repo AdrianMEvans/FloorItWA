@@ -1523,7 +1523,7 @@ a[href*='tel'], a[href*='mailto'] {
 	justify-content: center;
 	padding: 30px 16px;
 	min-height: 100%;
-	border: 1px solid #435A2B;
+	border: 1px solid #435a2b;
 	transition: all .2s ease;
 	z-index: 1;
 }
