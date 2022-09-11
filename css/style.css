@@ -18982,7 +18982,7 @@ h1 + .tabs-line {
 .owl-carousel .owl-item {
 	position: relative;
 	min-height: 1px;
-	max-height: 300px;
+	max-height: 500px;
 	float: left;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
