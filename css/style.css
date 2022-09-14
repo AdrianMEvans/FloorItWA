@@ -16121,6 +16121,9 @@ html.rd-navbar-fixed-linked .page {
 	.swiper-slider-modern .slider-modern-box {
 		margin-left: 90px;
 	}
+	.swiper-slider-modern .slider-modern-box p{
+		color: #ffffff;
+	}
 	.swiper-slider-modern * + .button-wrap {
 		margin-top: 40px;
 	}
