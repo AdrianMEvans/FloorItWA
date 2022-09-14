@@ -3604,6 +3604,18 @@ hr {
 	border-color: #111111;
 }
 
+.button-default-outline-3:hover, .button-default-outline-2:active {
+	color: #ffffff;
+	background-color: #C6A47E;
+	border-color: #ffffff;
+}
+
+.button-default-outline-3, .button-default-outline-2:focus {
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
 .button-default-outline-2:hover, .button-default-outline-2:active {
 	color: #ffffff;
 	background-color: #C6A47E;
