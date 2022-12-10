@@ -320,7 +320,7 @@ a, a:focus, a:active {
 }
 
 a:hover {
-	color: #808080;
+	color: #808080!important;
 }
 
 a[href*='tel'], a[href*='mailto'] {
@@ -2443,6 +2443,7 @@ img {
 	font-style: normal;
 	speak: none;
 	text-transform: none;
+	color: #bababa;
 }
 
 .icon-circle {
