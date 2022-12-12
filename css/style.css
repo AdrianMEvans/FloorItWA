@@ -1456,7 +1456,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-sportlight-new::before {
-	background: #f8bd4f;
+	background: #bababa;
 }
 
 @media (min-width: 992px) {
