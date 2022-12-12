@@ -3906,7 +3906,7 @@ hr {
 	left: 0;
 	width: 101%;
 	height: 101%;
-	background: #808080;
+	background: #bababa;
 	z-index: -1;
 	opacity: 0;
 	transform: scale3d(0.7, 1, 1);
