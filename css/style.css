@@ -287,6 +287,24 @@ p [style*='max-width'] {
 }
 
 /*
+
+*
+* Awards
+*/
+.awards_container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.awards_container img {
+	max-width: 200px;
+	/* margin-left: 20px; */
+	padding: 20px 10px;
+
+}
+
+/*
 *
 * Brand
 */
