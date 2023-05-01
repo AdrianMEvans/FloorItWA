@@ -13108,7 +13108,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-megamenu-list {
-	columns: 2;
+	columns: 1;
 	break-inside: avoid;
 	-moz-column-gap: 30px;
 	-webkit-column-gap: 30px;
